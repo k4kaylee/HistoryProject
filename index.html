@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <title>История</title>
+  </head>
+
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div class="container">
+      <h1 style="display:none;" id="head" class="animate-bottom">Конспект</h1>
+      <div style="display:none;" id="list" class="animate-left">
+        <h2 align="left">Содержание:</h2>
+        <ul>
+          <li>Переход к государственному княжению. Население в конце 5-9в</li>
+          <li>Период феодальной разробленности. Культура 10-13в</li>
+          <li>Возникновение ВКЛ. Причины</li>
+          <li>Краткая история ВКЛ</li>
+          <li>Внешняя политика ВКЛ</li>
+          <li>Система власти ВКЛ</li>
+          <li>Отношения ВКЛ и других государств. Внешняя политика</li>
+          <li>Ливонская война</li>
+          <li>Образование Речи Посполитой. Люблинская уния</li>
+          <li>Положение Московского княжества</li>
+          <li>Экономика Речи Посполитой в 16-17вв</li>
+          <li>Города Речи Посполитой в 16-17вв</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  <script>
+    //Реализация лоадера
+    var delay, delayForList;
+
+
+    function myFunction() {
+      delay = setTimeout(showPage, 1000);
+      delayForList = setTimeout(showList, 1400);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("head").style.display = "block";
+    }
+    function showList(){
+      document.getElementById("list").style.display = "block";
+    }
+
+  </script>
+  </body>
+</html>

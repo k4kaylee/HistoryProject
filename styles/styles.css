@@ -1,0 +1,126 @@
+body, html{
+  background: #222;
+  color: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+h1,h2,h3 {
+  font-weight: 300;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}
+
+li{
+  margin-bottom: 1vw;
+  opacity: 0.6;
+}
+
+li:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh - 0.1em;
+    width: 60%;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #2d2d2d;
+  border-radius: 50%;
+  border-top: 8px solid #a8a9ae;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 0.75s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Анимация для "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { left:-100px; opacity:0 }
+  to { left:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+/* Анимация для оглавления */
+.animate-left {
+  position: relative;
+  -webkit-animation-name: animateleft;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animateleft {
+  from { left:-100px; opacity:0 }
+  to { left:0px; opacity:1 }
+}
+
+@keyframes animateleft {
+  from{ left:-100px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
+#head {
+  display: none;
+  text-align: center;
+}
+
+#list {
+  text-align: left;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
