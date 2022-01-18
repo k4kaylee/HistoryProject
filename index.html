@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="styles/styles.css">
       <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <title>История</title>
+    <script src="scripts/script.js"></script>
   </head>
 
   <body onload="myFunction()" style="margin:0;">
@@ -14,43 +15,20 @@
       <div style="display:none;" id="list" class="animate-left">
         <h2 align="left">Содержание:</h2>
         <ul>
-          <li>Переход к государственному княжению. Население в конце 5-9в</li>
-          <li>Период феодальной разробленности. Культура 10-13в</li>
-          <li>Возникновение ВКЛ. Причины</li>
-          <li>Краткая история ВКЛ</li>
-          <li>Внешняя политика ВКЛ</li>
-          <li>Система власти ВКЛ</li>
-          <li>Отношения ВКЛ и других государств. Внешняя политика</li>
-          <li>Ливонская война</li>
-          <li>Образование Речи Посполитой. Люблинская уния</li>
-          <li>Положение Московского княжества</li>
-          <li>Экономика Речи Посполитой в 16-17вв</li>
-          <li>Города Речи Посполитой в 16-17вв</li>
+          <li onclick="document.location='../History/1.html'">Переход к государственному княжению. Население в конце 5-9в</li>
+          <li onclick="document.location='../History/pages/2.html'">Возникновение ВКЛ. Причины</li>
+          <li onclick="document.location='../History/pages/3.html'">Период феодальной разробленности. Культура 10-13в</li>
+          <li onclick="document.location='../History/pages/4.html'">Краткая история ВКЛ</li>
+          <li onclick="document.location='../History/pages/5.html'">Внешняя политика ВКЛ</li>
+          <li onclick="document.location='../History/pages/6.html'">Система власти ВКЛ</li>
+          <li onclick="document.location='../History/pages/7.html'">Отношения ВКЛ и других государств. Внешняя политика</li>
+          <li onclick="document.location='../History/pages/8.html'">Ливонская война</li>
+          <li onclick="document.location='../History/pages/9.html'">Образование Речи Посполитой. Люблинская уния</li>
+          <li onclick="document.location='../History/pages/10.html'">Положение Московского княжества</li>
+          <li onclick="document.location='../History/pages/11.html'">Экономика Речи Посполитой в 16-17вв</li>
+          <li onclick="document.location='../History/pages/12.html'">Города Речи Посполитой в 16-17вв</li>
         </ul>
       </div>
     </div>
-
-
-
-
-  <script>
-    //Реализация лоадера
-    var delay, delayForList;
-
-
-    function myFunction() {
-      delay = setTimeout(showPage, 1000);
-      delayForList = setTimeout(showList, 1400);
-    }
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("head").style.display = "block";
-    }
-    function showList(){
-      document.getElementById("list").style.display = "block";
-    }
-
-  </script>
   </body>
 </html>

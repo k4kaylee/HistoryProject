@@ -6,7 +6,7 @@ body, html{
   padding:0;
 }
 
-h1,h2,h3 {
+h1,h2 {
   font-weight: 300;
   margin: 0.4em 0;
 }
@@ -16,14 +16,22 @@ h2 {
   font-size: 2em;
 }
 
+h3{
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 2vh;
+  margin-top: 4.15vh;
+}
+
 li{
-  margin-bottom: 1vw;
+  margin-bottom: 2vh;
   opacity: 0.6;
 }
 
 li:hover{
   opacity: 1;
   cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 .container{
@@ -102,6 +110,22 @@ li:hover{
   text-align: left;
 }
 
+/* Анимация для стрелки */
+.animate-right {
+  position: relative;
+  -webkit-animation-name: animateleft;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animateleft {
+  from { left:50px; opacity:0 }
+  to { left:0px; opacity:1 }
+}
+
+@keyframes animateleft {
+  from{ left:50px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
 
 
 
@@ -123,4 +147,58 @@ li:hover{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+
+/* Стрелка "назад" */
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 1vh;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 70px;
+  height: 90px;
+}
+
+.left{
+  top: 3%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+
+
+
+
+.hr-line {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #444;
+}
+
+p{
+  line-height: 1.4em;
 }
