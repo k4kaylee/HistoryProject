@@ -25,10 +25,13 @@ h3{
 
 li{
   margin-bottom: 2vh;
+}
+
+.list-content{
   opacity: 0.6;
 }
 
-li:hover{
+.list-content:hover{
   opacity: 1;
   cursor: pointer;
   transition: all 100ms ease-in-out;
