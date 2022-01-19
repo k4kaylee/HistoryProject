@@ -128,10 +128,10 @@ li:hover{
 }
 
 
-
+/* Прокрутка */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1vh;
 }
 
 /* Track */
@@ -142,6 +142,7 @@ li:hover{
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 1vh;
 }
 
 /* Handle on hover */
