@@ -4,16 +4,20 @@
     <meta charset="utf-8">
     <title>Внешняя политика ВКЛ</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/dark.css" id="theme-link">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button class="arrow left animate-right" onclick="document.location='index.html'">
+    <button class="arrow left animate-arrow" onclick="document.location='index.html'">
       <svg width="2em" height="4em" viewBox="0 0 50 80" xml:space="preserve">
         <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
     	45.63,75.8 0.375,38.087 45.63,0.375 "/>
       </svg>
     </button>
-
+    <label class="switch animate-right" id="theme-button">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
     <div class="container animate-bottom">
       <h3>Внешняя политика ВКЛ</h3>
       <hr>
@@ -68,5 +72,6 @@
 
 
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

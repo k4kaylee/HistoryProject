@@ -1,0 +1,9 @@
+body, html{
+  background: #222;
+  color: #f4f4f4;
+}
+
+#loader {
+    border: 8px solid #2d2d2d;
+    border-top: 8px solid #a8a9ae;
+}

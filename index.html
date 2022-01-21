@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" type="text/css" href="styles/dark.css" id="theme-link">
       <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <title>Конспект</title>
-    <script src="scripts/script.js"></script>
   </head>
 
   <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
+    <label class="switch animate-right" id="theme-button">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
     <div class="container">
       <h1 style="display:none;" id="head" class="animate-bottom">Конспект</h1>
       <div style="display:none;" id="list" class="animate-left">
@@ -30,5 +34,6 @@
         </ul>
       </div>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -5,15 +5,19 @@
     <title>Возникновение ВКЛ. Причины.</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/dark.css" id="theme-link">
   </head>
   <body>
-    <button class="arrow left animate-right" onclick="document.location='index.html'">
+    <button class="arrow left animate-arrow" onclick="document.location='index.html'">
       <svg width="2em" height="4em" viewBox="0 0 50 80" xml:space="preserve">
         <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
     	45.63,75.8 0.375,38.087 45.63,0.375 "/>
       </svg>
     </button>
-
+    <label class="switch animate-right" id="theme-button">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
     <div class="container animate-bottom">
       <h3>Возникновение ВКЛ. Причины.</h3>
 
@@ -28,7 +32,7 @@
   <li class="list">Активные завоевания монголо-татар. (есак - дань)</li>
 </ul>
 
-<ul>Внутриполитические (социально-экономические)</ul>
+Внутриполитические (социально-экономические)
 
 <p>В литовских племенах происходит отделение ремесла от сельского хозяйства - предобразование городов.
 Угрозы завоевания вынудили образовывать более тесные экономические связи между славянскими княжествами и литовскими племенами. Города становились центрами защиты и торговли. (Детинец - укреплённый центр города)
@@ -105,5 +109,6 @@
 
 <p>При Витовте бояре составляли раду. Это был совещательный орган.</p>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
