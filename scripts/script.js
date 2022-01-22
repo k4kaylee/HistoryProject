@@ -1,23 +1,25 @@
 //Реализация лоадера
 var delay, delayForList;
 
-function myFunction() {
+function loadPage() {
   delay = setTimeout(showPage, 1000);
-  delayForList = setTimeout(showList, 1400);
+  delayForElements = setTimeout(showElements, 1400);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("head").style.display = "block";
 }
-function showList(){
+function showElements(){
   document.getElementById("list").style.display = "block";
+  document.getElementById("theme-button").style.display = "block";
 }
 
 
 
 //Реализация переключения цветовой темы
 var btn = document.getElementById("theme-button");
+var btnIndex = document.getElementById("theme-button-index");
 var link = document.getElementById("theme-link");
 
 btn.addEventListener("change", function () { ChangeTheme(); });
@@ -49,6 +51,6 @@ function ChangeTheme()
 function Save(theme)
 {
     var Request = new XMLHttpRequest();
-    Request.open("GET", "./themes.php?theme=" + theme, true); //У вас путь может отличаться
+    Request.open("GET", "./styles.php?theme=" + theme, true);
     Request.send();
 }

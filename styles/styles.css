@@ -114,6 +114,11 @@ li{
   text-align: left;
 }
 
+#theme-button{
+  display: block;
+}
+
+
 /* Анимация для стрелки */
 .animate-arrow {
   position: relative;
@@ -148,6 +153,9 @@ li{
   to{ right:0; opacity:1 }
 }
 
+#theme-button-index{
+  display: none;
+}
 
 /* Прокрутка */
 /* width */
