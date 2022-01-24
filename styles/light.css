@@ -8,6 +8,6 @@ body, html{
     border-top: 8px solid #2d2d2d;
 }
 
-.arrow{
-
+.back{
+  stroke: #111;
 }
