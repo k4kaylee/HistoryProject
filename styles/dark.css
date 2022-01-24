@@ -7,3 +7,14 @@ body, html{
     border: 8px solid #2d2d2d;
     border-top: 8px solid #a8a9ae;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-radius: 1vh;
+}
