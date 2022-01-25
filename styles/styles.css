@@ -4,11 +4,6 @@ body, html{
   padding:0;
 }
 
-.abc{
-  width: 50px;
-  height:50px;
-  background-color: red;
-}
 h1,h2 {
   font-weight: 300;
   margin: 0.4em 0;
@@ -286,4 +281,33 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Paginator styles */
+.pagination {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.pagination a {
+  color: #f2f2f2;
+  font-family: arial;
+  float: left;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  display: inline-block;
+  float: none;
+}
+
+.pagination a.active {
+  background-color: #888;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  transition: all 170ms ease-in-out;
 }
